@@ -4,6 +4,8 @@
 
 This setup enables efficient dependency management, fast builds, and consistent workflows across diverse programming environments.
 
+![Kimono Batman](./docs/images/kimono-batman.jpg)
+
 ## Table of Contents
 
 - [Overview](#overview)
@@ -27,6 +29,7 @@ This setup enables efficient dependency management, fast builds, and consistent 
 Kimono is a **polyglot** monorepo built to handle multiple projects developed in **TypeScript**, **Go**, and **Rust**. The repository is organized using **Bazel**, a fast and flexible build tool that works well with multiple languages and scales efficiently for large repositories.
 
 Key Features:
+
 - **Bazel** as the build system for managing dependencies, builds, and tests.
 - Multi-language support, with **TypeScript**, **Go**, and **Rust** as the core languages.
 - **Modularization**: Independent, reusable packages within the monorepo.
@@ -174,7 +177,7 @@ The `kimono` monorepo is structured to accommodate different services and compon
 kimono/
 ├── WORKSPACE                     # Bazel workspace configuration file
 ├── BUILD.bazel                   # Root build file for configuring Bazel
-├── packages/                     
+├── packages/
 │   ├── typescript-service/        # TypeScript service package
 │   │   ├── BUILD.bazel           # Bazel build file for TypeScript service
 │   │   └── src/                  # TypeScript source files
@@ -197,7 +200,7 @@ kimono/
 - **`packages/`**: Contains the TypeScript, Go, and Rust services. Each service is a self-contained package.
 - **`src/`**: Source code for each service.
 - **`.bazelrc`**: Configuration file for Bazel settings.
-  
+
 ## Development Workflow
 
 ### Adding a New Package
